@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./考试一.css" />
+    <title>考试</title>
+  </head>
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form action="" id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label">Name<input type="text" name="name" id="name" required placeholder="name" /></label>
+        <label for="email" id="email-label">Email<input type="email" name="email" id="email" required placeholder="email" /></label>
+        <label for="number" id="number-label"
+          >Age(optional) <input type="number" name="number" id="number" minlength="5" maxlength="10" pattern="[a-z0-5]" required placeholder="age"
+        /></label>
+        <label for="dropdown"
+          >Which option best describes your current role?
+          <select name="dropdown" id="dropdown">
+            <option value="null">select current role</option>
+            <option value="one">11</option>
+            <option value="two">11</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        Would you recommend freeCodeCamp to a friend?<label for="danxuan">
+          <input type="radio" name="radio" id="danxuan" class="box" value="Definitely" />Definitely
+        </label>
+        <label for="danxuan"> <input type="radio" name="radio" id="danxuan" class="box" value="DMaybe" />DMaybe</label>
+        <label for="danxuan"> <input type="radio" name="radio" id="danxuan" class="box" value="Not sure" />Not sure</label>
+      </fieldset>
+      <fieldset>
+        <label for="dropdown"
+          >What is your favorite feature of freeCodeCamp?
+          <select name="dropdown" id="dropdown">
+            <option value="null">select current role</option>
+            <option value="one">11</option>
+            <option value="two">11</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        What would you like to see improved? (Check all that apply)
+        <label for="fuxuan"><input type="checkbox" name="fuxuan" id="fuxuan" class="box" value="Front-end Projects" />Front-end Projects </label>
+        <label for="fuxuan"> <input type="checkbox" name="fuxuan1" id="fuxuan" value="Back-end Projects" class="box" />Back-end Projects</label>
+        <label for="fuxuan"> <input type="checkbox" name="fuxuan2" id="fuxuan" value="Data Visualization" class="box" />Data Visualization</label>
+        <label for="fuxuan"> <input type="checkbox" name="fuxuan3" id="fuxuan" value="Challenges" class="box" />Challenges</label>
+        <label for="fuxuan"> <input type="checkbox" name="fuxuan4" id="fuxuan" value="Gitter help rooms" class="box" />Gitter help rooms</label>
+      </fieldset>
+      <fieldset>
+        <label for="textarea"
+          >Any comments or suggestions?<textarea id="textarea" cols="30" rows="3" placeholder="Enter your comment here...."></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" name="" id="submit" />
+    </form>
+  </body>
+</html>

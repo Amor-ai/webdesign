@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!--声明  并确保浏览器尝试满足行业范围的规范-->
+<html lang="en">
+  <!--制定页面的语言为英语-->
+  <!--注释-->
+  <!--部分演示会注释掉,观看效果时,去除注释即可-->
+  <!--一个网页主要有 head(头部),body(主体),footer(尾部)组成-->
+  <!--先看头部 head-->
+  <head>
+    <meta charset="UTF-8" />
+    <!--通知浏览器对多种语言进行编码-->
+    <title>纯html基础演示</title>
+    <!--title 元素决定了浏览器在页面的标题栏或选项卡中显示的内容-->
+  </head>
+  <!--再看主体body-->
+  <body>
+    <!--首先认识5大标签 h1-h5 <h1> - <h6> 标签可定义标题。<h1> 定义最大的标题。<h6> 定义最小的标题。-->
+    <!--<h1>这是h1</h1>
+    <h2>这是h2</h2>
+    <h3>这是h3</h3>
+    <h4>这是h4</h4>
+    <h5>这是h5</h5>-->
+    <h1>浪漫就是生活中的点点滴滴</h1>
+    <!--p标签 章节标签-->
+    <!-- a标签的 href 属性用于指定超链接目标的URL,target=_blank属性表示网页会在在新的标签页打开-->
+    <p>
+      这个世界中的<a href="http://124.223.190.155:1314" target="_blank">我们</a
+      >就是浪漫
+    </p>
+    <hr />
+    <main>
+      <!--main标签只能出现一次,表示主要内容-->
+      <section>
+        <!--相当于段落-->
+        <h1>过去-未来</h1>
+        <p><em>迷恋过去</em>是没有意义的,<em>珍惜现在</em>才是正确的道路</p>
+        <!--em标签 表示强调-->
+        <figure>
+          <!--figure 用作文档中插图的图像 比如下文中的img-->
+          <a href="http://124.223.190.155:8644"
+            ><img
+              src="./image/心形.png"
+              alt="心型"
+              width="200px"
+              height="200px"
+          /></a>
+          <!--img 表示引用图像 alt表示图像的名称 width height 表示图像的宽高-->
+          <figcaption><em>爱心</em></figcaption>
+          <!--figcaption用于添加标题以描述figure图形元素中包含的图像-->
+        </figure>
+      </section>
+      <hr />
+      <!--分割线-->
+      <section>
+        <p>
+          有美人兮，<strong>见之不忘.</strong>一日不见兮，<strong
+            >思之如狂.</strong
+          >
+        </p>
+        <!--strong 元素用于指示某些文本非常重要或紧急-->
+      </section>
+      zyhh
+      <hr />
+      <section>
+        <form action="">
+          <!--form 表单元素 action 表示要将信息提交到什么位置 -->
+          <fieldset>
+            <!--fieldset 元素用于在 Web 表单中将相关的输入和标签组合在一起。 fieldset 元素是块级元素，这意味着它们出现在新的一行上。简单理解就是把选项框起来-->
+            <legend>是否想要一个人生的选择</legend>
+            <!--legend 元素充当 fieldset 元素中内容的标题。 它为用户提供了有关他们应该在表单的该部分中输入什么的上下文。-->
+            <!--input 元素允许你通过多种方式从 Web 表单中收集数据 自闭合元素 正常的标签需要 <a></a>这种格式 input只需要<input>即可 我们称这种标签为自闭合标签 -->
+            <!--你可以使用 type 属性创建多种输入。 你可以轻松创建密码字段、重置按钮或控件，让用户从他们的计算机中选择文件 下面有演示-->
+            <!--type="radio" 单选框 type="checkbox" 复选框-->
+            <!--id是唯一指定值 不可重复-->
+            <!--checked 默认选中 一般默认选中第一个选项-->
+            <!--<label> 标签为 input 元素定义标注 -->
+            <label
+              ><input
+                type="radio"
+                name="单选"
+                id="yes"
+                value="yes"
+                checked
+              />是</label
+            >
+            <label
+              ><input type="radio" name="单选" id="no" value="no" />否</label
+            >
+          </fieldset>
+          <fieldset>
+            <legend>你希望的人生是什么样的</legend>
+            <input type="checkbox" name="复选" id="x1" value="x1" checked />
+            <label for="x1">精彩的</label
+            ><!--<label> 标签的 for 属性应当与相关元素的 id 属性相同。-->
+            <input type="checkbox" name="复选" id="x2" value="x2" />
+            <label for="x2">有趣的</label>
+            <input type="checkbox" name="复选" id="x3" value="x3" />
+            <label for="x3">愉快的</label>
+            <input type="checkbox" name="复选" id="x4" value="x4" />
+            <label for="x4">有价值的</label>
+          </fieldset>
+          <fieldset>
+            <legend>写下你的名字吧</legend>
+            <input
+              type="text"
+              name="文本框"
+              placeholder="你的名字"
+              required
+            /><!-- placeholder占位符文本用于提示人们在输入框中输入什么样的信息 required 必须填写 不能为空-->
+            <button type="submit">提交</button
+            ><!--button 按钮 type="submit" 提交按钮-->
+          </fieldset>
+        </form>
+      </section>
+    </main>
+  </body>
+  <hr />
+  <!--再看尾部footer-->
+  <footer>
+    <p>
+      有任何想说的,欢迎联系我,我会为你送上<a href="http://124.223.190.155:8644"
+        >爱心</a
+      >
+    </p>
+  </footer>
+</html>

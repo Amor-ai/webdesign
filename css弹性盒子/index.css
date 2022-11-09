@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0; /*清楚外边距*/
+    font-family: sans-serif;/*修改适合的字体*/
+    background: #f5f6f7;
+  }
+  
+  .header {
+    text-align: center;
+    text-transform: uppercase;/*放大字体*/
+    padding: 32px;/*内边距*/
+    background-color: #0a0a23;
+    color: #fff;
+    border-bottom: 4px solid #fdb347;/*下边框*/
+  }
+  
+  .gallery {
+    display: flex;/*弹性布局*/
+    flex-direction: row;/*垂直方向 从左到右弹性布局*/
+    flex-wrap: wrap;/*超出部分自动移至下一行*/
+    justify-content: center;/*flex子元素居中对齐*/
+    align-items: center;/*将弹性 <div> 元素的所有项目的居中对齐：*/
+    gap: 16px;/*flex图片布局时 增加间距*/
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 10px;
+  }
+  
+  .gallery img {
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    object-fit: cover;/*保持原有的纵横比*/
+    border-radius: 10px;
+  }
+
+  .gallery::after {
+    content: "";
+    width: 350px;
+  }
+  
